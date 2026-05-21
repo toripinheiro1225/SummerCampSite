@@ -81,7 +81,7 @@ function setupCountdown() {
 
     countdownNode.innerHTML = `
       <p class="crt-line crt-info">Dates: July 1 - July 6</p>
-      <p class="crt-line crt-system">SYS // icamp6 terminal uplink online</p>
+      <p class="crt-line crt-system">SYS // icamp 6 terminal uplink online</p>
       <p class="crt-line crt-info">INFO // launch target 2026-07-01 12:00 PDT</p>
       <p class="crt-line crt-ok"><span class="crt-red-dot" aria-hidden="true"></span>READY // T-minus ${countdownToken}</p>
       <p class="crt-line crt-prompt"><span class="crt-prefix">&gt;</span>awaiting campers<span class="crt-cursor" aria-hidden="true"></span></p>
