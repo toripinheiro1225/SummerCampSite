@@ -1,3 +1,9 @@
+/* --- Deep-link scroll behaviour --- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem; /* clear the sticky topbar */
+}
+
 /* --- Drifting Spores & Growing Vines Effects --- */
 #spore-layer {
   position: fixed;
