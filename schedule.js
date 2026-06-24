@@ -26,7 +26,6 @@
     { day: "thu", start: 16, end: 17.5, title: "Glass House", loc: "Fireside", type: "default" },
     { day: "thu", start: 17.5, end: 18, title: "All Camp Meeting", loc: "Fireside", type: "highlight" },
     { day: "thu", start: 18, end: 19.5, title: "Dinner (Cuntwrap Supremez)", loc: "Picnic Tables", type: "meal" },
-    { day: "thu", start: 18, end: 19.5, title: "Hot Pot Icebreaker", loc: "Picnic Tables", type: "default" },
     { day: "thu", start: 19.5, end: 21, title: "Get Ready!", loc: "Lewks Loft", type: "default" },
     { day: "thu", start: 21, end: 24, title: "Bug Party", loc: "Forest Stage", type: "party" },
     // Friday
@@ -42,7 +41,7 @@
     // Saturday
     { day: "sat", start: 9, end: 10, title: "Baby Banana Pancakes", loc: "Lodge", type: "default" },
     { day: "sat", start: 10, end: 11, title: "Parents Group Sesh", loc: "Lodge", type: "default" },
-    { day: "sat", start: 11, end: 13, title: "Coffee Shop", loc: "Near Lodge", type: "default" },
+    { day: "sat", start: 11, end: 13, title: "Java Compiler", loc: "Near Lodge", type: "default" },
     { day: "sat", start: 11.5, end: 13.5, title: "Claytime", loc: "Picnic Tables", type: "default" },
     { day: "sat", start: 13.5, end: 14.5, title: "Ethics: What Is Meaning?", loc: "Fireside", type: "default" },
     { day: "sat", start: 14.5, end: 17, title: "River Day Party", loc: "River", type: "default" },

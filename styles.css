@@ -1378,6 +1378,22 @@ h3 {
   font-size: 0.85rem;
 }
 
+.schedule-desc {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.inline-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.inline-link:hover {
+  opacity: 0.8;
+}
+
 .schedule-item.schedule-meal {
   border-color: rgba(125, 224, 176, 0.25);
   background: rgba(125, 224, 176, 0.04);
