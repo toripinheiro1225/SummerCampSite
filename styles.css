@@ -1393,6 +1393,155 @@ h3 {
   background: rgba(255, 210, 100, 0.05);
 }
 
+/* View toggle */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.view-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-btn.active {
+  background: rgba(125, 224, 176, 0.12);
+  border-color: rgba(125, 224, 176, 0.5);
+  color: var(--text);
+}
+
+.view-btn:hover {
+  border-color: rgba(125, 224, 176, 0.4);
+  color: var(--text);
+}
+
+/* Schedule grid view */
+.schedule-grid-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.schedule-grid {
+  display: flex;
+  min-width: 1000px;
+}
+
+.sg-time-col {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  width: 70px;
+  min-width: 70px;
+  background: var(--bg, #0c1210);
+  padding-top: 36px;
+  position: relative;
+}
+
+.sg-time-label {
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  transform: translateY(-50%);
+  white-space: nowrap;
+  padding-right: 8px;
+  text-align: right;
+  width: 100%;
+}
+
+.sg-day-col {
+  flex: 1;
+  min-width: 140px;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sg-day-header {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  padding: 8px 4px;
+  background: rgba(125, 224, 176, 0.08);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.sg-day-body {
+  position: relative;
+}
+
+.sg-gridline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sg-gridline-half {
+  border-top-style: dotted;
+  opacity: 0.4;
+}
+
+.sg-event {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(125, 180, 140, 0.2);
+  border: 1px solid rgba(125, 180, 140, 0.4);
+  border-radius: 4px;
+  padding: 3px 5px;
+  overflow: hidden;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.sg-event:hover {
+  z-index: 5;
+  overflow: visible;
+  background: rgba(125, 180, 140, 0.35);
+}
+
+.sg-ev-title {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sg-ev-loc {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.65rem;
+}
+
+.sg-ev-meal {
+  background: rgba(125, 224, 176, 0.15);
+  border-color: rgba(125, 224, 176, 0.5);
+}
+
+.sg-ev-party {
+  background: rgba(200, 130, 255, 0.15);
+  border-color: rgba(200, 130, 255, 0.5);
+}
+
+.sg-ev-highlight {
+  background: rgba(255, 210, 100, 0.15);
+  border-color: rgba(255, 210, 100, 0.5);
+}
+
 @media (max-width: 600px) {
   .schedule-item {
     grid-template-columns: 1fr;

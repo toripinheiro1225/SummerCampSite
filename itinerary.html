@@ -24,13 +24,9 @@
             <span class="eyebrow">Itinerary</span>
             <h1>iCamp 6 Schedule</h1>
             <p>Activities, meals, performances, and social gatherings — day by day.</p>
-            <div class="get-involved-buttons">
-              <a class="gi-btn" href="#wednesday">Wed</a>
-              <a class="gi-btn" href="#thursday">Thu</a>
-              <a class="gi-btn" href="#friday">Fri</a>
-              <a class="gi-btn" href="#saturday">Sat</a>
-              <a class="gi-btn" href="#sunday">Sun</a>
-              <a class="gi-btn" href="#monday">Mon</a>
+            <div class="view-toggle">
+              <button class="view-btn active" data-view="schedule">Schedule View</button>
+              <button class="view-btn" data-view="list">List View</button>
             </div>
           </div>
         </div>
@@ -48,7 +44,17 @@
         </ul>
       </section>
 
-      <section class="section panel reveal" id="wednesday">
+      <!-- SCHEDULE VIEW -->
+      <div id="schedule-view" class="schedule-view">
+        <div class="schedule-grid-wrapper">
+          <div class="schedule-grid" id="schedule-grid"></div>
+        </div>
+      </div>
+
+      <!-- LIST VIEW -->
+      <div id="list-view" class="list-view" style="display:none;">
+
+      <section class="section panel" id="wednesday">
         <h2 class="kicker">Wednesday 7/1</h2>
         <div class="schedule-day">
           <div class="schedule-item">
@@ -66,7 +72,7 @@
         </div>
       </section>
 
-      <section class="section panel reveal" id="thursday">
+      <section class="section panel" id="thursday">
         <h2 class="kicker">Thursday 7/2</h2>
         <div class="schedule-day">
           <div class="schedule-item">
@@ -108,7 +114,7 @@
         </div>
       </section>
 
-      <section class="section panel reveal" id="friday">
+      <section class="section panel" id="friday">
         <h2 class="kicker">Friday 7/3</h2>
         <div class="schedule-day">
           <div class="schedule-item">
@@ -150,7 +156,7 @@
         </div>
       </section>
 
-      <section class="section panel reveal" id="saturday">
+      <section class="section panel" id="saturday">
         <h2 class="kicker">Saturday 7/4</h2>
         <div class="schedule-day">
           <div class="schedule-item">
@@ -204,7 +210,7 @@
         </div>
       </section>
 
-      <section class="section panel reveal" id="sunday">
+      <section class="section panel" id="sunday">
         <h2 class="kicker">Sunday 7/5</h2>
         <div class="schedule-day">
           <div class="schedule-item">
@@ -229,7 +235,11 @@
           </div>
           <div class="schedule-item schedule-meal">
             <span class="schedule-time">6:00 – 7:30 PM</span>
-            <span class="schedule-event">🍽️ Dinner: Return of Trash Dinner <span class="schedule-location">@ Picnic Tables</span></span>
+            <span class="schedule-event">🍽️ Dinner: Trash Panda Feast <span class="schedule-location">@ Picnic Tables</span></span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-time">6:30 – 7:30 PM</span>
+            <span class="schedule-event">Queers and Beers <span class="schedule-location">@ The Lodge</span></span>
           </div>
           <div class="schedule-item">
             <span class="schedule-time">8:00 PM – 12:00 AM</span>
@@ -238,23 +248,26 @@
         </div>
       </section>
 
-      <section class="section panel reveal" id="monday">
+      <section class="section panel" id="monday">
         <h2 class="kicker">Monday 7/6</h2>
         <div class="schedule-day">
+          <div class="schedule-item">
+            <span class="schedule-time">8:00 – 11:30 AM</span>
+            <span class="schedule-event">Departures</span>
+          </div>
           <div class="schedule-item">
             <span class="schedule-time">11:00 AM – 12:00 PM</span>
             <span class="schedule-event">Bad Church <span class="schedule-location">@ Fire Pit</span></span>
           </div>
-          <div class="schedule-item">
-            <span class="schedule-time">6:30 – 7:30 PM</span>
-            <span class="schedule-event">Queers and Beers <span class="schedule-location">@ The Lodge</span></span>
-          </div>
         </div>
       </section>
+
+      </div><!-- end list-view -->
 
     </main>
 
     <div id="site-footer"></div>
     <script src="effects.js"></script>
+    <script src="schedule.js"></script>
   </body>
 </html>
