@@ -1442,7 +1442,10 @@ th {
   }
 
   .theme-card {
-    grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .party-themes-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
