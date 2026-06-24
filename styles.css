@@ -1299,6 +1299,19 @@ h3 {
   width: fit-content;
 }
 
+.expandable summary.expandable-link {
+  display: block;
+  text-align: right;
+  width: 100%;
+  color: var(--accent, #7de0b0);
+  text-decoration: underline;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 .expandable summary::-webkit-details-marker {
   display: none;
 }
