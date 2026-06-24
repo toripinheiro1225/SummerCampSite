@@ -1288,6 +1288,29 @@ h3 {
   margin-bottom: 1rem;
 }
 
+/* Expandable details/summary */
+.expandable {
+  margin-top: 1rem;
+}
+
+.expandable summary {
+  cursor: pointer;
+  list-style: none;
+  width: fit-content;
+}
+
+.expandable summary::-webkit-details-marker {
+  display: none;
+}
+
+.expandable-content {
+  margin-top: 1.2rem;
+}
+
+.expandable-content h3:first-child {
+  margin-top: 0;
+}
+
 .up-next-list {
   display: grid;
   gap: 0.6rem;
