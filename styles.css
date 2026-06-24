@@ -415,25 +415,16 @@ img {
 }
 
 .nav-toggle {
-  display: inline-flex;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: transparent;
-  color: var(--text);
-  padding: 0.55rem 0.75rem;
-  font-family: "IBM Plex Mono", monospace;
+  display: none;
 }
 
 .main-nav {
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.45rem;
   margin-top: 0.8rem;
   padding-bottom: 0.8rem;
-}
-
-.main-nav.show {
-  display: flex;
 }
 
 .main-nav a {
@@ -1397,10 +1388,6 @@ th {
 }
 
 @media (min-width: 860px) {
-  .nav-toggle {
-    display: none;
-  }
-
   .topbar-inner {
     align-items: center;
   }
@@ -1408,9 +1395,6 @@ th {
   .main-nav {
     margin-top: 0;
     padding-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
