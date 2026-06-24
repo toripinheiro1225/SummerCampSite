@@ -1296,7 +1296,25 @@ h3 {
 .expandable summary {
   cursor: pointer;
   list-style: none;
-  width: fit-content;
+}
+
+.expandable summary.expandable-inline {
+  display: block;
+}
+
+.expandable summary.expandable-inline p {
+  margin: 0;
+}
+
+.expandable summary .see-more-link {
+  color: var(--accent, #7de0b0);
+  text-decoration: underline;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+}
+
+.expandable[open] summary .see-more-link {
+  display: none;
 }
 
 .expandable summary.expandable-link {
