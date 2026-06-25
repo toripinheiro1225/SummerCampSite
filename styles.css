@@ -1431,6 +1431,20 @@ h3 {
   margin-top: 2rem;
 }
 
+.landscape-hint {
+  display: none;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .landscape-hint {
+    display: block;
+  }
+}
+
 .schedule-grid {
   display: flex;
   min-width: 1000px;
@@ -1561,6 +1575,37 @@ h3 {
   .schedule-item {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+  }
+}
+
+/* Landscape mobile: optimize schedule grid to fit screen */
+@media (max-width: 900px) and (orientation: landscape) {
+  .schedule-grid {
+    min-width: 750px;
+  }
+  .sg-time-col {
+    width: 60px;
+    min-width: 60px;
+  }
+  .sg-time-label {
+    font-size: 0.6rem;
+  }
+  .sg-day-col {
+    min-width: 110px;
+  }
+  .sg-day-header {
+    font-size: 0.7rem;
+    padding: 4px 2px;
+  }
+  .sg-event {
+    font-size: 0.6rem;
+    padding: 2px 3px;
+  }
+  .sg-ev-time {
+    font-size: 0.5rem;
+  }
+  .sg-ev-loc {
+    font-size: 0.55rem;
   }
 }
 
