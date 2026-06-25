@@ -1522,6 +1522,13 @@ h3 {
   color: var(--text);
 }
 
+.sg-ev-time {
+  display: block;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  margin-bottom: 1px;
+}
+
 .sg-ev-loc {
   display: block;
   color: var(--text-dim);
