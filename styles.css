@@ -1581,31 +1581,40 @@ h3 {
 /* Landscape mobile: optimize schedule grid to fit screen */
 @media (max-width: 900px) and (orientation: landscape) {
   .schedule-grid {
-    min-width: 750px;
+    min-width: 0;
+    width: 100%;
   }
   .sg-time-col {
-    width: 60px;
-    min-width: 60px;
+    width: 50px;
+    min-width: 50px;
   }
   .sg-time-label {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
   .sg-day-col {
-    min-width: 110px;
+    min-width: 0;
+    flex: 1;
   }
   .sg-day-header {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     padding: 4px 2px;
   }
   .sg-event {
-    font-size: 0.6rem;
-    padding: 2px 3px;
+    font-size: 0.55rem;
+    padding: 1px 2px;
+    line-height: 1.2;
   }
   .sg-ev-time {
     font-size: 0.5rem;
   }
-  .sg-ev-loc {
+  .sg-ev-title {
     font-size: 0.55rem;
+  }
+  .sg-ev-loc {
+    display: none;
+  }
+  .schedule-grid-wrapper {
+    overflow-x: hidden;
   }
 }
 
