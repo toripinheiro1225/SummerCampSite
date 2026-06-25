@@ -401,6 +401,7 @@ img {
   justify-content: space-between;
   gap: 1rem;
   padding: 0.8rem 0;
+  position: relative;
 }
 
 .brand {
@@ -416,6 +417,14 @@ img {
 
 .nav-toggle {
   display: none;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -425,6 +434,28 @@ img {
   gap: 0.45rem;
   margin-top: 0.8rem;
   padding-bottom: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg, #0c1210);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.8rem;
+    z-index: 100;
+    margin-top: 0;
+  }
+  .main-nav.show {
+    display: flex;
+  }
 }
 
 .main-nav a {
