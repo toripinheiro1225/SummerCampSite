@@ -101,11 +101,13 @@
     html += "</div>";
 
     // Build day columns
-    for (const day of DAYS) {
+    for (let di = 0; di < DAYS.length; di++) {
+      const day = DAYS[di];
+      const colorClass = di % 2 === 0 ? "sg-day-blue" : "sg-day-green";
       const dayEvents = events.filter((e) => e.day === day.key);
       const totalLanes = assignLanes(dayEvents);
 
-      html += `<div class="sg-day-col">`;
+      html += `<div class="sg-day-col ${colorClass}">`;
       html += `<div class="sg-day-header">${day.label}</div>`;
       html += `<div class="sg-day-body" style="height:${TOTAL_HEIGHT}px">`;
 
@@ -124,9 +126,7 @@
         const left = ev.lane * laneWidth;
         const width = laneWidth;
 
-        const typeClass = ev.type === "meal" ? "sg-ev-meal" : ev.type === "party" ? "sg-ev-party" : ev.type === "highlight" ? "sg-ev-highlight" : "";
-
-        html += `<div class="sg-event ${typeClass}" style="top:${top}px;height:${height}px;left:${left}%;width:${width}%">`;
+        html += `<div class="sg-event" style="top:${top}px;height:${height}px;left:${left}%;width:${width}%">`;
         if (ev.time) html += `<span class="sg-ev-time">${ev.time}</span>`;
         html += `<span class="sg-ev-title">${ev.title}</span>`;
         if (ev.loc) html += `<span class="sg-ev-loc">@ ${ev.loc}</span>`;

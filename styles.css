@@ -1513,7 +1513,6 @@ h3 {
 .sg-event:hover {
   z-index: 5;
   overflow: visible;
-  background: rgba(125, 180, 140, 0.55);
 }
 
 .sg-ev-title {
@@ -1535,11 +1534,28 @@ h3 {
   font-size: 0.65rem;
 }
 
-.sg-ev-meal,
-.sg-ev-party,
-.sg-ev-highlight {
-  background: rgba(125, 180, 140, 0.45);
-  border-color: rgba(125, 180, 140, 0.7);
+/* Day color alternation */
+.sg-day-blue .sg-day-header {
+  background: rgba(100, 160, 220, 0.5);
+  color: #fff;
+}
+.sg-day-green .sg-day-header {
+  background: rgba(100, 190, 140, 0.5);
+  color: #fff;
+}
+.sg-day-blue .sg-event {
+  background: rgba(100, 160, 220, 0.45);
+  border-color: rgba(100, 160, 220, 0.7);
+}
+.sg-day-green .sg-event {
+  background: rgba(100, 190, 140, 0.45);
+  border-color: rgba(100, 190, 140, 0.7);
+}
+.sg-day-blue .sg-event:hover {
+  background: rgba(100, 160, 220, 0.6);
+}
+.sg-day-green .sg-event:hover {
+  background: rgba(100, 190, 140, 0.6);
 }
 
 @media (max-width: 600px) {
