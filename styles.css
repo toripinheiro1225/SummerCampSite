@@ -1043,6 +1043,8 @@ th,
   background: rgba(17, 24, 21, 0.76);
   padding: 1.1rem;
   box-shadow: var(--shadow);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .mission-panel {
