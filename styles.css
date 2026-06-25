@@ -1440,8 +1440,8 @@ h3 {
   position: sticky;
   left: 0;
   z-index: 3;
-  width: 80px;
-  min-width: 80px;
+  width: 90px;
+  min-width: 90px;
   background: var(--bg, #0c1210);
   padding-top: 36px;
   position: relative;
@@ -1452,7 +1452,6 @@ h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.7rem;
   color: var(--text-dim);
-  transform: translateY(-50%);
   white-space: nowrap;
   padding-right: 8px;
   text-align: right;
