@@ -977,6 +977,19 @@ th,
   text-decoration: none;
 }
 
+.btn-sm {
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  margin-top: 0;
+}
+
+.quick-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
 /* Inline link style for all external/CTA links */
 .inline-link, a.inline-link {
   color: #7de0b0;
