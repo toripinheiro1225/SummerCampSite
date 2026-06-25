@@ -92,9 +92,10 @@
     if (!grid) return;
 
     // Build time labels column
+    const HEADER_HEIGHT = 36;
     let html = '<div class="sg-time-col">';
     for (let h = START_HOUR; h < END_HOUR; h++) {
-      const top = (h - START_HOUR) * PX_PER_HOUR;
+      const top = HEADER_HEIGHT + (h - START_HOUR) * PX_PER_HOUR;
       const label = h <= 12 ? (h === 12 ? "12:00 PM" : h + ":00 AM") : (h - 12) + ":00 PM";
       html += `<div class="sg-time-label" style="top:${top}px">${label}</div>`;
     }
