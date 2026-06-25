@@ -163,6 +163,44 @@
     });
   }
 
+  // Pinch-to-zoom on schedule grid
+  function setupPinchZoom() {
+    const wrapper = document.querySelector(".schedule-grid-wrapper");
+    const grid = document.getElementById("schedule-grid");
+    if (!wrapper || !grid) return;
+
+    let scale = 1;
+    let startDist = 0;
+    let startScale = 1;
+
+    grid.style.transformOrigin = "top left";
+    grid.style.transition = "transform 0.1s ease";
+
+    wrapper.addEventListener("touchstart", (e) => {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        startDist = getDistance(e.touches);
+        startScale = scale;
+      }
+    }, { passive: false });
+
+    wrapper.addEventListener("touchmove", (e) => {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        const dist = getDistance(e.touches);
+        scale = Math.min(Math.max(startScale * (dist / startDist), 0.5), 3);
+        grid.style.transform = `scale(${scale})`;
+      }
+    }, { passive: false });
+
+    function getDistance(touches) {
+      const dx = touches[0].clientX - touches[1].clientX;
+      const dy = touches[0].clientY - touches[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+  }
+
   renderGrid();
   setupViewToggle();
+  setupPinchZoom();
 })();

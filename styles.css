@@ -1426,23 +1426,10 @@ h3 {
 
 /* Schedule grid view */
 .schedule-grid-wrapper {
-  overflow-x: auto;
+  overflow: auto;
   padding-bottom: 1rem;
   margin-top: 2rem;
-}
-
-.landscape-hint {
-  display: none;
-  text-align: center;
-  color: var(--text-dim);
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-  .landscape-hint {
-    display: block;
-  }
+  touch-action: manipulation;
 }
 
 .schedule-grid {
@@ -1575,46 +1562,6 @@ h3 {
   .schedule-item {
     grid-template-columns: 1fr;
     gap: 0.2rem;
-  }
-}
-
-/* Landscape mobile: optimize schedule grid to fit screen */
-@media (max-width: 900px) and (orientation: landscape) {
-  .schedule-grid {
-    min-width: 0;
-    width: 100%;
-  }
-  .sg-time-col {
-    width: 50px;
-    min-width: 50px;
-  }
-  .sg-time-label {
-    font-size: 0.55rem;
-  }
-  .sg-day-col {
-    min-width: 0;
-    flex: 1;
-  }
-  .sg-day-header {
-    font-size: 0.65rem;
-    padding: 4px 2px;
-  }
-  .sg-event {
-    font-size: 0.55rem;
-    padding: 1px 2px;
-    line-height: 1.2;
-  }
-  .sg-ev-time {
-    font-size: 0.5rem;
-  }
-  .sg-ev-title {
-    font-size: 0.55rem;
-  }
-  .sg-ev-loc {
-    display: none;
-  }
-  .schedule-grid-wrapper {
-    overflow-x: hidden;
   }
 }
 
