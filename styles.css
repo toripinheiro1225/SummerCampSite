@@ -1428,6 +1428,7 @@ h3 {
 .schedule-grid-wrapper {
   overflow-x: auto;
   padding-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .schedule-grid {
@@ -1439,8 +1440,8 @@ h3 {
   position: sticky;
   left: 0;
   z-index: 3;
-  width: 70px;
-  min-width: 70px;
+  width: 80px;
+  min-width: 80px;
   background: var(--bg, #0c1210);
   padding-top: 36px;
   position: relative;
