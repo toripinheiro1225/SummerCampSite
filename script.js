@@ -105,7 +105,7 @@ function setupReveals() {
         }
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.02, rootMargin: "0px 0px 100px 0px" }
   );
 
   nodes.forEach((node) => observer.observe(node));
