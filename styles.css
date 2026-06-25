@@ -893,6 +893,11 @@ img {
   padding: 2.2rem 1.5rem 2.2rem 1.5rem;
   box-shadow: var(--shadow);
   margin-bottom: 1.3rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Heading hierarchy and spacing */
@@ -1045,6 +1050,13 @@ th,
   box-shadow: var(--shadow);
   overflow-wrap: break-word;
   word-break: break-word;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.panel * {
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .mission-panel {
@@ -1078,6 +1090,7 @@ th,
   background:
     radial-gradient(circle at 88% 12%, rgba(84, 211, 171, 0.2), transparent 44%),
     linear-gradient(150deg, rgba(16, 33, 30, 0.95), rgba(13, 29, 28, 0.88));
+  overflow: hidden;
 }
 
 .location-panel .kicker {
