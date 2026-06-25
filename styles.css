@@ -1514,8 +1514,8 @@ h3 {
   position: absolute;
   left: 0;
   right: 0;
-  background: rgba(125, 180, 140, 0.2);
-  border: 1px solid rgba(125, 180, 140, 0.4);
+  background: rgba(125, 180, 140, 0.45);
+  border: 1px solid rgba(125, 180, 140, 0.7);
   border-radius: 4px;
   padding: 3px 5px;
   overflow: hidden;
@@ -1528,7 +1528,7 @@ h3 {
 .sg-event:hover {
   z-index: 5;
   overflow: visible;
-  background: rgba(125, 180, 140, 0.35);
+  background: rgba(125, 180, 140, 0.55);
 }
 
 .sg-ev-title {
@@ -1544,18 +1544,18 @@ h3 {
 }
 
 .sg-ev-meal {
-  background: rgba(125, 224, 176, 0.15);
-  border-color: rgba(125, 224, 176, 0.5);
+  background: rgba(125, 224, 176, 0.4);
+  border-color: rgba(125, 224, 176, 0.75);
 }
 
 .sg-ev-party {
-  background: rgba(200, 130, 255, 0.15);
-  border-color: rgba(200, 130, 255, 0.5);
+  background: rgba(200, 130, 255, 0.4);
+  border-color: rgba(200, 130, 255, 0.75);
 }
 
 .sg-ev-highlight {
-  background: rgba(255, 210, 100, 0.15);
-  border-color: rgba(255, 210, 100, 0.5);
+  background: rgba(255, 210, 100, 0.4);
+  border-color: rgba(255, 210, 100, 0.75);
 }
 
 @media (max-width: 600px) {
