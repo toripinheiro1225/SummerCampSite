@@ -34,7 +34,7 @@
     { day: "fri", start: 9, end: 10, title: "Baby Banana Pancakes", loc: "Lodge", time: "9:00 - 10:00", type: "default" },
     { day: "fri", start: 10, end: 11, title: "Gratitude & Connection Yoga", loc: "River Deck", time: "10:00 - 11:00", type: "default" },
     { day: "fri", start: 10, end: 11, title: "Parents Group Sesh", loc: "Lodge", time: "10:00 - 11:00", type: "default" },
-    { day: "fri", start: 11, end: 13, title: "Java Compiler", loc: "Near Lodge", time: "11:00 - 1:00", type: "default" },
+    { day: "fri", start: 11.5, end: 13.5, title: "Java Compiler", loc: "Near Lodge", time: "11:30 - 1:30", type: "default" },
     { day: "fri", start: 12, end: 15, title: "DnD Session", loc: "Picnic Tables", time: "12:00 - 3:00", type: "default" },
     { day: "fri", start: 15, end: 15.5, title: "Baby Music Time", loc: "Baby Dome", time: "3:00 - 3:30", type: "default" },
     { day: "fri", start: 15, end: 17, title: "Re:turn Ritual", loc: "Dome", time: "3:00 - 5:00", type: "default" },
