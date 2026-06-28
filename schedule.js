@@ -11,7 +11,7 @@
 
   const START_HOUR = 8;
   const END_HOUR = 24; // midnight
-  const PX_PER_HOUR = 120;
+  const PX_PER_HOUR = 150;
   const TOTAL_HEIGHT = (END_HOUR - START_HOUR) * PX_PER_HOUR;
 
   const events = [
