@@ -1176,6 +1176,12 @@ th,
   line-height: 1;
 }
 
+.schedule-fullscreen {
+  overflow: auto;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
 .lodgings-table-wrap {
   overflow-x: auto;
   margin-bottom: 1.5rem;

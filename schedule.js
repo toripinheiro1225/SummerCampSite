@@ -200,7 +200,34 @@
     }
   }
 
+  // Fullscreen expand for schedule grid
+  function setupFullscreen() {
+    var expandBtn = document.getElementById("schedule-expand-btn");
+    var grid = document.getElementById("schedule-grid");
+    if (!expandBtn || !grid) return;
+
+    function openFullscreen() {
+      var overlay = document.createElement("div");
+      overlay.className = "map-fullscreen-overlay schedule-fullscreen";
+      overlay.innerHTML = '<button class="map-close-btn">&times;</button>';
+      var clone = grid.cloneNode(true);
+      clone.style.width = "1200px";
+      clone.style.maxHeight = "100%";
+      clone.style.overflow = "auto";
+      overlay.appendChild(clone);
+      document.body.appendChild(overlay);
+      overlay.addEventListener("click", function(e) {
+        if (e.target === overlay || e.target.classList.contains("map-close-btn")) {
+          document.body.removeChild(overlay);
+        }
+      });
+    }
+
+    expandBtn.addEventListener("click", openFullscreen);
+  }
+
   renderGrid();
   setupViewToggle();
   setupPinchZoom();
+  setupFullscreen();
 })();
