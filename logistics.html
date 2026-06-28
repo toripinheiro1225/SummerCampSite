@@ -44,7 +44,7 @@
 
       <section class="section panel reveal" id="food-and-beverages">
         <h2 class="kicker">Food and Beverages</h2>
-        <details class="expandable">
+        <details class="expandable" id="food-details">
           <summary class="expandable-inline"><p><strong>TL;DR:</strong> Dinner is provided, BYO breakfast, lunch and beverages, BYO water, no personal food storage in the main lodge. Read on for more details about menu, dietary restrictions, etc. <span class="see-more-link">See more</span></p></summary>
           <div class="expandable-content">
             <h3>Dinner is provided!</h3>
@@ -182,5 +182,14 @@
 
     <div id="site-footer"></div>
     <script src="effects.js"></script>
+    <script>
+      if (window.location.hash === "#food-details") {
+        var details = document.getElementById("food-details");
+        if (details) {
+          details.open = true;
+          details.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
   </body>
 </html>
