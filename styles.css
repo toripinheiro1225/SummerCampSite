@@ -1206,6 +1206,16 @@ th,
   letter-spacing: 0.04em;
 }
 
+.lodgings-section-row td {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.9rem;
+  padding-top: 1.2rem;
+  border-bottom: 2px solid var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
