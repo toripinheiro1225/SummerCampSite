@@ -1124,6 +1124,82 @@ th,
   margin-top: 0.35rem;
 }
 
+/* Lodgings Map */
+.lodgings-toggle {
+  margin-bottom: 1rem;
+}
+
+.lodgings-map-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.map-expand-icon {
+  text-align: right;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--text-dim);
+  margin-bottom: 0.4rem;
+  transition: color 0.2s;
+}
+.map-expand-icon:hover {
+  color: var(--accent);
+}
+
+.map-fullscreen-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.map-fullscreen-overlay img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.map-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.lodgings-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+.lodgings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.lodgings-table th,
+.lodgings-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.lodgings-table th {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
